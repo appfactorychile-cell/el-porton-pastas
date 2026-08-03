@@ -15,7 +15,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Fettuccine artesanal al pesto de El Portón Pastas">
   <title>El Portón Pastas | Pastas artesanales en Talcahuano</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
   <script type="application/ld+json">
@@ -37,13 +37,14 @@
   <header class="site-header" id="inicio">
     <nav class="nav wrap" aria-label="Navegación principal">
       <a class="brand" href="#inicio" aria-label="El Portón Pastas, inicio">
-        <span class="brand-botanical" aria-hidden="true"><img class="brand-branch branch-left" src="assets/decoraciones/rama-albahaca.svg" alt=""><img class="brand-porton" src="assets/decoraciones/porton.svg" alt=""><img class="brand-branch branch-right" src="assets/decoraciones/rama-albahaca.svg" alt=""></span>
-        <span>El Portón <small>Pastas</small></span>
+        <img class="brand-logo" src="assets/logo-el-porton-pastas.png" alt="" width="800" height="800" fetchpriority="high">
+        <span class="sr-only">El Portón Pastas</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
         <span class="sr-only">Abrir menú</span><i></i><i></i><i></i>
       </button>
       <div class="nav-links" id="nav-links">
+        <img class="mobile-menu-logo" src="assets/logo-el-porton-pastas.png" alt="El Portón Pastas Artesanales" width="800" height="800">
         <a href="#inicio">Inicio</a>
         <a href="#menu">Menú</a>
         <a href="#promociones">Promociones</a>
@@ -75,7 +76,7 @@
         <figure class="hero-food">
           <img src="assets/hero-fettuccine.webp" alt="Plato abundante de fettuccine artesanal al pesto con albahaca fresca y queso rallado" width="1800" height="1200" fetchpriority="high">
           <figcaption><strong>Fettuccine artesanal</strong><small>Preparado con dedicación</small></figcaption>
-          <img class="hero-food-line" src="assets/decoraciones/pasta-lineal.svg" alt="" aria-hidden="true">
+          <img class="hero-image-logo" src="assets/logo-el-porton-pastas.png" alt="Logo El Portón Pastas Artesanales, sabor con historia" width="800" height="800">
         </figure>
         </div>
       </div>
@@ -103,13 +104,19 @@
             <figure class="dish-photo"><img src="assets/fettuccine-pesto.webp" alt="Fettuccine artesanal al pesto con hojas frescas de albahaca y queso rallado" width="1200" height="900" loading="lazy" decoding="async"></figure>
             <div class="dish-content">
               <div class="dish-tags"><span>Artesanal</span><span>Personalizable</span></div>
-              <div class="dish-title"><div><span class="number">01</span><h3>Fettuccine al pesto</h3></div><strong>$5.990</strong></div>
-              <p class="dish-lead">Pasta artesanal con pesto y el aroma fresco de la albahaca.</p>
-              <div class="options">
-                <div><h4>Salsa</h4><ul><li>Pesto</li><li>Mozzarella</li><li>Champiñones</li></ul></div>
-                <div><h4>Masa</h4><ul><li>Tradicional</li><li>Betarraga</li><li>Albahaca</li></ul></div>
+              <div class="dish-title"><div><span class="number">01</span><h3>Fettuccine al pesto</h3></div><strong class="product-price" aria-live="polite">$5.990</strong></div>
+              <p class="dish-lead">Fettuccine artesanal acompañado de pesto y el aroma fresco de la albahaca.</p>
+              <div class="dough-picker" data-product="Fettuccine al pesto" data-sauce="Pesto">
+                <h4>Elige tu masa</h4>
+                <div class="dough-grid" role="radiogroup" aria-label="Masa para fettuccine al pesto">
+                  <button class="dough-option selected" type="button" role="radio" aria-checked="true" data-dough="Tradicional" data-price="5990"><img src="assets/masa-tradicional.webp" alt="Nido de masa tradicional" width="800" height="600" loading="lazy"><span>Tradicional</span><i aria-hidden="true">✓</i></button>
+                  <button class="dough-option" type="button" role="radio" aria-checked="false" data-dough="Betarraga" data-price="5990"><img src="assets/masa-betarraga.webp" alt="Nido de masa de betarraga" width="800" height="600" loading="lazy"><span>Betarraga</span><i aria-hidden="true">✓</i></button>
+                  <button class="dough-option" type="button" role="radio" aria-checked="false" data-dough="Albahaca" data-price="5990"><img src="assets/masa-albahaca.webp" alt="Nido de masa de albahaca" width="800" height="600" loading="lazy"><span>Albahaca</span><i aria-hidden="true">✓</i></button>
+                  <button class="dough-option" type="button" role="radio" aria-checked="false" data-dough="Mixta" data-price="6990"><img src="assets/masa-mixta.webp" alt="Nidos de masa tradicional, betarraga y albahaca" width="800" height="600" loading="lazy"><span>Mixta <small>+$1.000</small></span><i aria-hidden="true">✓</i></button>
+                </div>
+                <p class="mixed-total" aria-live="polite"></p>
               </div>
-              <a class="dish-order" href="https://wa.me/56933551041?text=Hola%20El%20Port%C3%B3n%20Pastas%2C%20quiero%20pedir%20fettuccine%20al%20pesto" target="_blank" rel="noopener">Pedir fettuccine al pesto <span aria-hidden="true">→</span></a>
+              <a class="dish-order dough-order" href="https://wa.me/56933551041" target="_blank" rel="noopener">Pedir fettuccine al pesto <span aria-hidden="true">→</span></a>
             </div>
           </article>
 
@@ -117,13 +124,19 @@
             <figure class="dish-photo"><img src="assets/fettuccine-champinones.webp" alt="Fettuccine en salsa cremosa con champiñones salteados en rodajas" width="1200" height="900" loading="lazy" decoding="async"></figure>
             <div class="dish-content">
               <div class="dish-tags"><span>Artesanal</span><span>Personalizable</span></div>
-              <div class="dish-title"><div><span class="number">02</span><h3>Fettuccine con champiñones</h3></div><strong>$5.990</strong></div>
-              <p class="dish-lead">Salsa cremosa de champiñones con champiñones salteados en rodajas.</p>
-              <div class="options">
-                <div><h4><span aria-hidden="true">◌</span> Otras salsas</h4><ul><li>Pesto</li><li>Mozzarella</li><li>Champiñones</li></ul></div>
-                <div><h4><span aria-hidden="true">◇</span> Elige tu masa</h4><ul><li>Tradicional</li><li>Betarraga</li><li>Albahaca</li></ul></div>
+              <div class="dish-title"><div><span class="number">02</span><h3>Fettuccine con champiñones</h3></div><strong class="product-price" aria-live="polite">$5.990</strong></div>
+              <p class="dish-lead">Fettuccine artesanal con salsa cremosa y champiñones salteados en rodajas.</p>
+              <div class="dough-picker" data-product="Fettuccine con salsa de champiñones" data-sauce="Champiñones">
+                <h4>Elige tu masa</h4>
+                <div class="dough-grid" role="radiogroup" aria-label="Masa para fettuccine con champiñones">
+                  <button class="dough-option selected" type="button" role="radio" aria-checked="true" data-dough="Tradicional" data-price="5990"><img src="assets/masa-tradicional.webp" alt="Nido de masa tradicional" width="800" height="600" loading="lazy"><span>Tradicional</span><i aria-hidden="true">✓</i></button>
+                  <button class="dough-option" type="button" role="radio" aria-checked="false" data-dough="Betarraga" data-price="5990"><img src="assets/masa-betarraga.webp" alt="Nido de masa de betarraga" width="800" height="600" loading="lazy"><span>Betarraga</span><i aria-hidden="true">✓</i></button>
+                  <button class="dough-option" type="button" role="radio" aria-checked="false" data-dough="Albahaca" data-price="5990"><img src="assets/masa-albahaca.webp" alt="Nido de masa de albahaca" width="800" height="600" loading="lazy"><span>Albahaca</span><i aria-hidden="true">✓</i></button>
+                  <button class="dough-option" type="button" role="radio" aria-checked="false" data-dough="Mixta" data-price="6990"><img src="assets/masa-mixta.webp" alt="Nidos de masa tradicional, betarraga y albahaca" width="800" height="600" loading="lazy"><span>Mixta <small>+$1.000</small></span><i aria-hidden="true">✓</i></button>
+                </div>
+                <p class="mixed-total" aria-live="polite"></p>
               </div>
-              <a class="dish-order" href="https://wa.me/56933551041?text=Hola%20El%20Port%C3%B3n%20Pastas%2C%20quiero%20pedir%20fettuccine%20con%20champi%C3%B1ones" target="_blank" rel="noopener">Pedir con champiñones <span aria-hidden="true">→</span></a>
+              <a class="dish-order dough-order" href="https://wa.me/56933551041" target="_blank" rel="noopener">Pedir con champiñones <span aria-hidden="true">→</span></a>
             </div>
           </article>
 
@@ -170,14 +183,48 @@
           <p class="eyebrow copper">Momentos de cocina</p>
           <h2 id="gallery-title">Una mesa que <em>abre el apetito</em></h2>
         </div>
-        <div class="gallery-grid">
-          <figure class="gallery-tall"><img src="assets/galeria-01.webp" alt="Fettuccine al pesto servido en una mesa cálida" width="1200" height="1200" loading="lazy" decoding="async"></figure>
-          <figure><img src="assets/galeria-02.webp" alt="Detalle de fettuccine al pesto con albahaca" width="1200" height="900" loading="lazy" decoding="async"></figure>
-          <figure><img src="assets/galeria-03.webp" alt="Preparación manual de masa artesanal" width="1200" height="900" loading="lazy" decoding="async"></figure>
-          <figure class="gallery-wide"><img src="assets/galeria-04.webp" alt="Fettuccine cremoso con champiñones salteados" width="1200" height="1200" loading="lazy" decoding="async"></figure>
-          <figure><img src="assets/galeria-05.webp" alt="Corte de pasta fresca en tiras de fettuccine" width="1200" height="900" loading="lazy" decoding="async"></figure>
-          <figure><img src="assets/galeria-06.webp" alt="Bowl abundante de ensalada con pollo trozado" width="1200" height="900" loading="lazy" decoding="async"></figure>
+        <div class="food-carousel" aria-roledescription="carrusel" aria-label="Galería gastronómica">
+          <div class="carousel-slides">
+            <figure class="carousel-slide active" aria-hidden="false"><img src="assets/galeria-01.webp" alt="Fettuccine al pesto servido en una mesa cálida" width="1200" height="1200" loading="lazy" decoding="async"><figcaption>Pastas artesanales, preparadas con dedicación.</figcaption></figure>
+            <figure class="carousel-slide" aria-hidden="true"><img src="assets/galeria-02.webp" alt="Detalle de fettuccine al pesto con albahaca" width="1200" height="900" loading="lazy" decoding="async"><figcaption>Albahaca fresca y sabores que se sienten en cada bocado.</figcaption></figure>
+            <figure class="carousel-slide" aria-hidden="true"><img src="assets/galeria-03.webp" alt="Preparación manual de masa artesanal" width="1200" height="900" loading="lazy" decoding="async"><figcaption>El oficio comienza con una masa hecha en casa.</figcaption></figure>
+            <figure class="carousel-slide" aria-hidden="true"><img src="assets/galeria-04.webp" alt="Fettuccine cremoso con champiñones salteados" width="1200" height="1200" loading="lazy" decoding="async"><figcaption>Champiñones salteados y una salsa suave y cremosa.</figcaption></figure>
+            <figure class="carousel-slide" aria-hidden="true"><img src="assets/galeria-05.webp" alt="Corte de pasta fresca en tiras de fettuccine" width="1200" height="900" loading="lazy" decoding="async"><figcaption>Fettuccine cortado para cada preparación.</figcaption></figure>
+            <figure class="carousel-slide" aria-hidden="true"><img src="assets/galeria-06.webp" alt="Bowl abundante de ensalada con pollo trozado" width="1200" height="900" loading="lazy" decoding="async"><figcaption>Alternativas frescas, abundantes y llenas de color.</figcaption></figure>
+          </div>
+          <button class="carousel-control carousel-prev" type="button" aria-label="Imagen anterior">←</button>
+          <button class="carousel-control carousel-next" type="button" aria-label="Imagen siguiente">→</button>
+          <div class="carousel-dots" role="group" aria-label="Elegir imagen"></div>
         </div>
+
+        <article class="bowl-feature" id="arma-tu-bowl">
+          <figure><img src="assets/bowl-pollo.webp" alt="Bowl de ensalada fresca con pollo trozado y vegetales variados" width="1200" height="900" loading="lazy" decoding="async"></figure>
+          <div class="bowl-builder">
+            <p class="eyebrow copper">Fresca y preparada al momento</p>
+            <div class="bowl-heading"><h3>Bowl de ensalada</h3><strong>$5.500</strong></div>
+            <p>Una combinación fresca y abundante de lechuga, pepino, arroz, choclo, apio, zanahoria, morrón y cebolla morada.</p>
+            <p class="bowl-note">Preparada al momento y acompañada de la proteína y las mayonesas de la casa que tú elijas.</p>
+            <fieldset class="choice-field protein-field">
+              <legend>Elige tu proteína</legend>
+              <div class="choice-row" role="radiogroup" aria-label="Proteína del bowl">
+                <button class="choice-button selected" type="button" role="radio" aria-checked="true" data-value="Pollo trozado"><span>Pollo trozado</span><i aria-hidden="true">✓</i></button>
+                <button class="choice-button" type="button" role="radio" aria-checked="false" data-value="2 huevos cocidos"><span>2 huevos cocidos</span><i aria-hidden="true">✓</i></button>
+              </div>
+            </fieldset>
+            <fieldset class="choice-field mayo-field">
+              <legend>Incluye 2 mayonesas de la casa</legend>
+              <span class="mayo-count" aria-live="polite">0 de 2 seleccionadas</span>
+              <div class="mayo-grid">
+                <button class="choice-button mayo-option" type="button" aria-pressed="false" data-value="Mayonesa de albahaca"><span>Mayonesa de albahaca</span><i aria-hidden="true">✓</i></button>
+                <button class="choice-button mayo-option" type="button" aria-pressed="false" data-value="Mayonesa con ajo"><span>Mayonesa con ajo</span><i aria-hidden="true">✓</i></button>
+                <button class="choice-button mayo-option" type="button" aria-pressed="false" data-value="Mayonesa con merkén"><span>Mayonesa con merkén</span><i aria-hidden="true">✓</i></button>
+                <button class="choice-button mayo-option" type="button" aria-pressed="false" data-value="Mayonesa de apio y perejil"><span>Mayonesa de apio y perejil</span><i aria-hidden="true">✓</i></button>
+              </div>
+            </fieldset>
+            <p class="bowl-error" aria-live="polite"></p>
+            <a class="dish-order bowl-order" href="https://wa.me/56933551041" target="_blank" rel="noopener">Pedir bowl por WhatsApp <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -267,7 +314,7 @@
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div class="footer-brand"><strong>El Portón Pastas — Talcahuano</strong><span class="footer-motto"><img src="assets/decoraciones/rama-albahaca.svg" alt="" aria-hidden="true">Sabor casero con historia<img src="assets/decoraciones/rama-albahaca.svg" alt="" aria-hidden="true"></span></div>
+      <div class="footer-brand"><img class="footer-logo" src="assets/logo-el-porton-pastas.png" alt="El Portón Pastas Artesanales" width="800" height="800" loading="lazy"><span class="footer-motto"><img src="assets/decoraciones/rama-albahaca.svg" alt="" aria-hidden="true">Sabor casero con historia<img src="assets/decoraciones/rama-albahaca.svg" alt="" aria-hidden="true"></span></div>
       <a href="https://wa.me/56933551041?text=Hola%20El%20Port%C3%B3n%20Pastas%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">Pedidos al WhatsApp +56 9 3355 1041</a>
     </div>
   </footer>
