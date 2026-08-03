@@ -1,9 +1,16 @@
-# Fotografías del menú
+# Recursos visuales
 
-Agrega las fotografías finales en esta carpeta con estos nombres exactos:
+Fotografías WebP optimizadas utilizadas por el sitio:
 
-- `fettuccine-pesto.webp` — fettuccine al pesto con hojas frescas de albahaca.
-- `fettuccine-champinones.webp` — fettuccine en salsa cremosa de champiñones, con champiñones salteados en rodajas.
-- `bowl-pollo.webp` — bowl de ensalada con pollo trozado.
+- Portada: `hero-fettuccine.webp`
+- Menú: `fettuccine-pesto.webp`, `fettuccine-champinones.webp`, `bowl-pollo.webp`
+- Proceso: `proceso-masa.webp`, `proceso-corte.webp`, `proceso-salsa.webp`, `proceso-plato.webp`
+- Galería: `galeria-01.webp` a `galeria-06.webp`
+- Redes sociales: `og-el-porton.webp`
 
-Formato recomendado: WebP, orientación horizontal, al menos 1200 px de ancho y peso inferior a 300 KB por archivo.
+Otros recursos:
+
+- `favicon.svg`
+- Decoraciones SVG originales en `decoraciones/`
+
+Todas las fotografías mantienen una dirección visual común y un peso inferior a 350 KB.
