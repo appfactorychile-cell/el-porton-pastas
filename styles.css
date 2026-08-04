@@ -374,7 +374,7 @@ body {
 .branch-left { left: 0; bottom: 1px; transform: rotate(9deg); }
 .branch-right { right: 0; bottom: 1px; transform: scaleX(-1) rotate(9deg); }
 .hero-copy { position: relative; }
-.hero-pasta-line { position: absolute; z-index: 0; width: 190px; left: auto; right: -118px; top: 168px; opacity: .075; pointer-events: none; }
+.hero-pasta-line { position: absolute; z-index: 0; width: 245px; left: -155px; right: auto; top: -115px; opacity: .075; pointer-events: none; }
 .hero-copy > *:not(.hero-pasta-line) { position: relative; z-index: 1; }
 .section-heading h2:not(#menu-title)::after, .delivery h2::after, .history h2::after {
   content: ""; display: block; width: 78px; height: 12px; margin: 17px auto 0;
@@ -396,7 +396,7 @@ body {
   .brand-botanical { width: 77px; flex-basis: 77px; }
   .brand-porton { width: 41px; }
   .brand-branch { width: 41px; }
-  .hero-pasta-line { width: 160px; left: auto; right: -54px; top: 190px; opacity: .055; }
+  .hero-pasta-line { width: 180px; left: auto; right: -68px; top: 40px; opacity: .055; }
 }
 
 @media (max-width: 520px) {
@@ -412,10 +412,10 @@ body {
 }
 
 /* Experiencia fotográfica gastronómica */
-.hero { min-height: 790px; overflow: hidden; background: #f6efe3; }
+.hero { min-height: 700px; overflow: hidden; background: #f6efe3; }
 .hero-inner { width: min(1280px, calc(100% - 40px)); grid-template-columns: .82fr 1.18fr; gap: 54px; }
 .hero-copy { padding: 38px 0; }
-.hero-food { position: relative; min-height: 560px; height: 72vh; max-height: 650px; margin: 90px 0 0; border-radius: 36px 0 0 36px; overflow: visible; box-shadow: 0 30px 70px rgba(53,42,29,.17); }
+.hero-food { position: relative; min-height: 540px; height: 68vh; max-height: 610px; margin: 28px 0 0; border-radius: 36px 0 0 36px; overflow: visible; box-shadow: 0 30px 70px rgba(53,42,29,.17); }
 .hero-food::before, .hero-food::after { display: none; }
 .hero-food > img:first-child { width: 100%; height: 100%; display: block; border-radius: inherit; object-fit: cover; object-position: 60% center; }
 .hero-food figcaption { position: absolute; z-index: 3; left: -28px; bottom: 28px; padding: 15px 20px; border-radius: 14px; background: rgba(255,253,248,.96); box-shadow: 0 12px 34px rgba(47,37,26,.16); backdrop-filter: blur(8px); }
@@ -510,11 +510,12 @@ body {
 .brand-logo { width: 104px; height: 104px; display: block; object-fit: contain; mix-blend-mode: multiply; }
 .mobile-menu-logo { display: none; }
 .hero-logo { display: none; }
+.hero-image-spiral { position: absolute; z-index: 3; width: 166px !important; height: 166px !important; left: -70px; top: 34px; padding: 18px; object-fit: contain !important; border: 1px solid rgba(36,75,58,.12); border-radius: 50% !important; background: rgba(247,239,226,.82); opacity: .72; box-shadow: 0 12px 34px rgba(37,45,38,.08); pointer-events: none; }
 .footer-inner { flex-direction: column; justify-content: center; text-align: center; }
 .footer-brand { width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .footer-logo { width: 164px; height: 164px; display: block; object-fit: contain; border-radius: 50%; }
 .footer-motto { justify-content: center; width: 100%; }
-.menu-grid { grid-template-columns: repeat(2,1fr); align-items: stretch; }
+.menu-grid { grid-template-columns: repeat(3,1fr); align-items: stretch; }
 .bowl-card { grid-column: 1 / -1; display: grid; grid-template-columns: .8fr 1.2fr; }
 .bowl-card .dish-photo { height: 100%; min-height: 420px; }
 .section-heading { margin-bottom: 34px; }
@@ -573,6 +574,7 @@ body {
   .brand { min-width: 82px; }
   .brand-logo { width: 76px; height: 76px; }
   .nav-links .mobile-menu-logo { width: 80px; height: 80px; margin: 0 auto 12px; display: block; object-fit: contain; mix-blend-mode: multiply; }
+  .hero-image-spiral { width: 128px !important; height: 128px !important; left: auto; right: -24px; top: -30px; padding: 14px; }
   .menu-grid { grid-template-columns: 1fr; }
   .bowl-card { grid-column: auto; display: flex; }
   .bowl-card .dish-photo { min-height: 290px; height: 290px; }

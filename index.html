@@ -16,8 +16,8 @@
   <meta property="og:image:alt" content="Fettuccine artesanal al pesto de El Portón Pastas">
   <title>El Portón Pastas | Pastas artesanales en Talcahuano</title>
   <link rel="icon" href="assets/favicon-logo.png" type="image/png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260803-4">
+  <script src="script.js?v=20260803-4" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -75,6 +75,7 @@
         </div>
         <figure class="hero-food">
           <img src="assets/hero-fettuccine.webp" alt="Plato abundante de fettuccine artesanal al pesto con albahaca fresca y queso rallado" width="1800" height="1200" fetchpriority="high">
+          <img class="hero-image-spiral" src="assets/decoraciones/pasta-lineal.svg" alt="" aria-hidden="true">
           <figcaption><strong>Fettuccine artesanal</strong><small>Preparado con dedicación</small></figcaption>
         </figure>
         </div>
@@ -139,11 +140,31 @@
             </div>
           </article>
 
+          <article class="dish-card mozzarella-card">
+            <figure class="dish-photo"><img src="assets/fettuccine-mozzarella.webp" alt="Fettuccine artesanal con mozzarella fundida, queso rallado y láminas de queso" width="1200" height="900" loading="lazy" decoding="async"></figure>
+            <div class="dish-content">
+              <div class="dish-tags"><span>Artesanal</span><span>Personalizable</span></div>
+              <div class="dish-title"><div><span class="number">03</span><h3>Fettuccine con mozzarella</h3></div><strong class="product-price" aria-live="polite">$5.990</strong></div>
+              <p class="dish-lead">Fettuccine artesanal con una salsa suave, cremosa y llena del sabor de la mozzarella.</p>
+              <div class="dough-picker" data-product="Fettuccine con mozzarella" data-sauce="Mozzarella">
+                <h4>Elige tu masa</h4>
+                <div class="dough-grid" role="radiogroup" aria-label="Masa para fettuccine con mozzarella">
+                  <button class="dough-option selected" type="button" role="radio" aria-checked="true" data-dough="Tradicional" data-price="5990"><img src="assets/masa-tradicional.webp" alt="Nido de masa tradicional" width="800" height="600" loading="lazy"><span>Tradicional</span><i aria-hidden="true">✓</i></button>
+                  <button class="dough-option" type="button" role="radio" aria-checked="false" data-dough="Betarraga" data-price="5990"><img src="assets/masa-betarraga.webp" alt="Nido de masa de betarraga" width="800" height="600" loading="lazy"><span>Betarraga</span><i aria-hidden="true">✓</i></button>
+                  <button class="dough-option" type="button" role="radio" aria-checked="false" data-dough="Albahaca" data-price="5990"><img src="assets/masa-albahaca.webp" alt="Nido de masa de albahaca" width="800" height="600" loading="lazy"><span>Albahaca</span><i aria-hidden="true">✓</i></button>
+                  <button class="dough-option" type="button" role="radio" aria-checked="false" data-dough="Mixta" data-price="6990"><img src="assets/masa-mixta.webp" alt="Nidos de masa tradicional, betarraga y albahaca" width="800" height="600" loading="lazy"><span>Mixta <small>+$1.000</small></span><i aria-hidden="true">✓</i></button>
+                </div>
+                <p class="mixed-total" aria-live="polite"></p>
+              </div>
+              <a class="dish-order dough-order" href="https://wa.me/56933551041" target="_blank" rel="noopener">Pedir con mozzarella <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
           <article class="dish-card bowl-card">
             <figure class="dish-photo"><img src="assets/bowl-pollo.webp" alt="Bowl de ensalada con pollo trozado, lechuga, pepino, arroz, choclo, apio, zanahoria, morrón y cebolla morada" width="1200" height="900" loading="lazy" decoding="async"></figure>
             <div class="dish-content">
               <div class="dish-tags"><span>Fresco</span><span>Incluye 2 salsas</span></div>
-              <div class="dish-title"><div><span class="number">03</span><h3>Bowl de ensalada con pollo</h3></div><strong>$5.500</strong></div>
+              <div class="dish-title"><div><span class="number">04</span><h3>Bowl de ensalada con pollo</h3></div><strong>$5.500</strong></div>
               <p class="dish-lead">Fresco, abundante y preparado con ingredientes variados.</p>
               <div class="ingredient-block">
                 <h4>Ingredientes</h4>
