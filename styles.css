@@ -320,7 +320,7 @@ body { background: var(--paper); }
 .notice { border-radius: 8px; }
 
 .history { padding: 76px 0; background: #eee7dc; }
-.history-layout { grid-template-columns: .42fr 1.58fr; gap: 55px; }
+.history-layout { grid-template-columns: .95fr 1.05fr; gap: 55px; }
 .history-art { height: 280px; border-radius: 20px; background: #dfd1c0; }
 .history-art.history-photo { height: auto; border-radius: 4px; background: #f5ead7; }
 .history-art::before { opacity: .1; }
