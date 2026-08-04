@@ -17,7 +17,10 @@
   <title>El Portón Pastas | Pastas artesanales en Talcahuano</title>
   <link rel="icon" href="assets/favicon-logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css?v=20260803-4">
+  <link rel="stylesheet" href="assistant.css?v=20260803-2">
+  <script src="restaurant-config.js?v=20260803-2" defer></script>
   <script src="script.js?v=20260803-4" defer></script>
+  <script src="assistant.js?v=20260803-2" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -259,8 +262,34 @@
         <ol class="steps">
           <li><span>1</span><div><h3>Elige tu plato</h3><p>Fettuccine artesanal o bowl fresco.</p></div></li>
           <li><span>2</span><div><h3>Personalízalo</h3><p>Escoge masa, salsa o proteína.</p></div></li>
-          <li><span>3</span><div><h3>Confirma por WhatsApp</h3><p>Coordinamos tu pedido y reparto.</p></div></li>
+          <li><span>3</span><div><h3>Confirma por WhatsApp</h3><p>Envía tu comprobante si pagas por transferencia. Al recibirlo confirmamos tu pedido.</p></div></li>
         </ol>
+        <div class="order-information" aria-label="Información de preparación y pago">
+          <article class="order-info-card preparation-card">
+            <span class="order-info-icon" aria-hidden="true">45</span>
+            <div>
+              <p class="eyebrow copper">Preparación artesanal</p>
+              <h3>Pastas frescas, hechas a mano</h3>
+              <p>Cada pedido requiere aproximadamente <strong>45 minutos de preparación</strong>. Elaboramos las pastas frescas para cada solicitud; no se preparan de un día para otro.</p>
+            </div>
+          </article>
+          <article class="order-info-card payment-card">
+            <span class="order-info-icon" aria-hidden="true">$</span>
+            <div>
+              <p class="eyebrow copper">Métodos de pago</p>
+              <h3>Efectivo o transferencia</h3>
+              <dl class="payment-details">
+                <div><dt>Titular</dt><dd>J-DECH COMERCIALIZADORA SPA</dd></div>
+                <div><dt>RUT</dt><dd>77.905.422-5</dd></div>
+                <div><dt>Banco</dt><dd>Mercado Pago</dd></div>
+                <div><dt>Tipo de cuenta</dt><dd>Cuenta Vista</dd></div>
+                <div><dt>Número de cuenta</dt><dd>1019057759</dd></div>
+                <div><dt>Correo</dt><dd>jdechcomercializadora@gmail.com</dd></div>
+              </dl>
+              <p class="payment-note">Si pagas por transferencia, envía el comprobante por WhatsApp. El pedido queda confirmado cuando recibimos el comprobante y validamos disponibilidad y horario.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -287,15 +316,23 @@
           <div class="delivery-items">
             <div><span class="icon-box" aria-hidden="true">2+</span><p><strong>Reparto gratis</strong>Desde 2 unidades.</p></div>
             <div><span class="icon-box" aria-hidden="true">1</span><p><strong>$1.000 de reparto</strong>Para un solo almuerzo.</p></div>
-            <div><span class="icon-box" aria-hidden="true">◷</span><p><strong>Pedido anticipado</strong>Coordínalo con tiempo.</p></div>
+            <div><span class="icon-box" aria-hidden="true">45</span><p><strong>45 minutos aprox.</strong>Preparación fresca y artesanal.</p></div>
           </div>
           <p class="notice">Cobertura y disponibilidad sujetas a confirmación por WhatsApp.</p>
         </div>
-        <div class="delivery-art" aria-hidden="true">
-          <span class="route">· · · · · · · · · ·</span>
-          <div class="house"><i></i></div>
-          <div class="parcel">EP</div>
-          <p>Talcahuano<br><strong>plano</strong></p>
+        <div class="delivery-map">
+          <iframe
+            title="Mapa de la Plaza de Armas de Talcahuano"
+            src="https://www.google.com/maps?q=Plaza+de+Armas+de+Talcahuano%2C+Chile&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+          <div class="delivery-map-caption">
+            <span>Referencia del sector</span>
+            <strong>Plaza de Armas de Talcahuano</strong>
+            <small>Este mapa no corresponde a la dirección del negocio.</small>
+          </div>
         </div>
       </div>
     </section>
@@ -342,9 +379,28 @@
     </div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/56933551041?text=Hola%20El%20Port%C3%B3n%20Pastas%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.1 19.8L3 29l6.4-1.7A13 13 0 1 0 16 3Zm0 23.6c-2 0-3.9-.5-5.5-1.5l-.4-.2-3.8 1 1-3.7-.3-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.3-.4.3-.7.1-1.9-.9-3.2-1.7-4.5-3.9-.3-.5.3-.5.9-1.7.1-.3.1-.5 0-.7l-1-2.4c-.3-.6-.6-.5-.8-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 .9 4.1.8 1.3-.2 1.9-1.2 2.2-1.7.3-.5.3-1 .2-1.1-.2-.2-.5-.3-.8-.4Z"/></svg>
-    <span>WhatsApp</span>
-  </a>
+  <button class="host-launcher host-enter" id="host-launcher" type="button" aria-controls="host-panel" aria-expanded="false">
+    <span class="host-avatar"><img src="assets/logo-el-porton-pastas.png" alt="" width="800" height="800"></span>
+    <span class="host-launcher-copy"><strong>¿Te ayudo con tu pedido?</strong><small><span class="host-status" aria-hidden="true"></span>Asistente disponible</small></span>
+  </button>
+
+  <section class="host-panel" id="host-panel" role="dialog" aria-modal="false" aria-labelledby="host-title" aria-hidden="true" hidden>
+    <header class="host-head">
+      <span class="host-avatar"><img src="assets/logo-el-porton-pastas.png" alt="" width="800" height="800"></span>
+      <span class="host-head-text"><strong id="host-title">Anfitrión El Portón</strong><small>Asistente virtual</small></span>
+      <button class="host-icon-btn host-close" type="button" aria-label="Cerrar asistente">×</button>
+    </header>
+    <div class="host-tools" aria-label="Herramientas del pedido">
+      <button class="host-tool host-back" type="button">← Volver</button>
+      <button class="host-tool host-cart-button" type="button">Pedido <span class="host-cart-count" aria-label="Unidades en el pedido">0</span></button>
+      <button class="host-tool danger host-empty" type="button">Vaciar</button>
+    </div>
+    <div class="host-messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+    <form class="host-compose">
+      <label class="host-sr" for="host-input">Escribe tu consulta</label>
+      <input id="host-input" name="message" type="text" maxlength="240" autocomplete="off" placeholder="Escribe tu consulta…">
+      <button class="host-send" type="submit" aria-label="Enviar mensaje"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.4 20.4 21 12 3.4 3.6l.1 6.5 11.2 1.9-11.2 1.9-.1 6.5Z"/></svg></button>
+    </form>
+  </section>
 </body>
 </html>
